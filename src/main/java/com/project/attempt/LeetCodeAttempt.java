@@ -181,7 +181,7 @@ public class LeetCodeAttempt {
                     nodeOfValue(treeNodes, preOrderValues.get(i)).right = nodeOfValue(treeNodes, nextPreorder2);
 
                     // We then remove both elements from both lists as they are now properly
-                    // linked to the binary tree and we have established their connections.
+                    // linked to the binary tree, and we have established their connections.
                     preOrderValues.remove(i+2);
                     preOrderValues.remove(i+1);
                     postOrderValues.remove(postOrderIndex-1);
@@ -219,6 +219,7 @@ public class LeetCodeAttempt {
 
     }
 
+    // A helper method that returns the TreeNode within a LinkedList of an int value we are looking for.
     private static TreeNode nodeOfValue(LinkedList<TreeNode> list, int value) {
 
         for (int i = 0; i < list.size(); i++) {
