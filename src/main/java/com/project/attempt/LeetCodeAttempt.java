@@ -46,6 +46,25 @@ public class LeetCodeAttempt {
         System.out.println(node4.left.left.left.left.left.val);
         System.out.println();
 
+        int[] preorder5 = new int[]{1,2,4,8,9,5,11,3,6,13,7,14,15};
+        int[] postorder5 = new int[]{8,9,4,11,5,2,13,6,14,15,7,3,1};
+        TreeNode node5 = constructBinaryTreeFromPreorderAndPostorderTraversal(preorder5, postorder5);
+
+        System.out.println(node5.val);
+        System.out.println(node5.left.val);
+        System.out.println(node5.right.val);
+        System.out.println(node5.left.left.val);
+        System.out.println(node5.left.right.val);
+        System.out.println(node5.right.left.val);
+        System.out.println(node5.right.right.val);
+        System.out.println(node5.left.left.left.val);
+        System.out.println(node5.left.left.right.val);
+        System.out.println(node5.left.right.left.val);
+        System.out.println(node5.right.left.left.val);
+        System.out.println(node5.right.right.left.val);
+        System.out.println(node5.right.right.right.val);
+        System.out.println();
+
     }
 
     // This method constructs a valid binary tree when given both its preorder and postorder traversal.

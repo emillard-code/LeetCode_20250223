@@ -1,4 +1,4 @@
-package com.project.attempt;
+package com.project.solution;
 
 // TreeNode class is implemented exactly as provided by challenge specifications.
 public class TreeNode {
